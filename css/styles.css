@@ -33,18 +33,15 @@ body {
 
 .content h1 {
   color: #5d5d5d;
-}
-
-.content p.subtext {
-  line-height: 24px;
-}
-
-.content h1 {
   font-size: 64px;
 }
 
 .content h2 {
   font-size: 36px;
+}
+
+.content p.subtext {
+  line-height: 24px;
 }
 
 .section-info {
@@ -198,8 +195,8 @@ body {
   font-weight: normal;
 }
 
-.surrounded-header:before,
-.surrounded-header:after {
+.surrounded-header::before,
+.surrounded-header::after {
   content: "";
   width: 20px;
   height: 1px;
@@ -222,8 +219,8 @@ body {
   gap: 30px;
 }
 
-.teammates-list:before,
-.teammates-list:after {
+.teammates-list::before,
+.teammates-list::after {
   content: "";
   width: max-content;
   min-width: 20px;
@@ -233,12 +230,12 @@ body {
   cursor: pointer;
 }
 
-.teammates-list:before {
+.teammates-list::before {
   justify-content: flex-start;
   content: "\003C";
 }
 
-.teammates-list:after {
+.teammates-list::after {
   justify-content: flex-end;
   content: "\003E";
 }
