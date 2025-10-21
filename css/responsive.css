@@ -16,6 +16,16 @@
     transition: color 0.3s ease;
   }
 
+  .teammates-list::before,
+  .teammates-list::after {
+    display: flex;
+    font-size: 30px;
+    color: #969696;
+    justify-content: flex-start;
+    margin: 20px;
+    padding-bottom: 30px;
+  }
+
   .teammate-social-icons > div:hover {
     background-color: #1f1f1f;
     transition: background-color 0.3s ease;
@@ -38,8 +48,8 @@
   }
 }
 
-/* TABLET AND MOBILE VIEWS - 0px to 1023px */
-@media (max-width: 1023px) {
+/* TABLET AND MOBILE VIEWS - 0768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
   .content {
     padding: 0 20px;
   }
@@ -66,7 +76,8 @@
   }
 
   .portfolio-list {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 40px;
   }
 
