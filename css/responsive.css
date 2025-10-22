@@ -6,8 +6,73 @@
  * @format
  */
 
-/* DESKTOP VIEW - 1024px and above */
-@media (min-width: 1024px) and (max-width: 1200px) {
+/* DESKTOP VIEW - 1281px and above */
+@media (min-width: 1281px) {
+  .content {
+    max-width: 100%;
+
+  }
+
+    p.subtext {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .top-navigation .trigram {
+    display: none;
+  }
+
+
+  .teammates-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    width: 1024px;
+    overflow: hidden;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+
+  .teammates-list::before,
+  .teammates-list::after {
+    display: flex;
+    color: #969696;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+    .teammates-list::before {
+    justify-content: flex-start;
+    content: "\003C";
+    padding-right: 40px;
+  }
+
+  .teammates-list::after {
+    justify-content: flex-end;
+    content: "\003E";
+  }
+
+  .teammate-img-wrapper {
+    width: 160px;
+    overflow: hidden;
+  }
+  .teammate-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+/* SMALL DESKTOP AND LAPTOP VIEWS - 1024px to 1280px */
+@media (min-width: 1024px) and (max-width: 1280px) {
   .content {
     max-width: 100%;
     padding-left: 30px;
@@ -36,6 +101,8 @@
     display: flex;
     width: 1024px;
     overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 0px;
     gap: 30px;
   }
 
@@ -100,7 +167,7 @@
   }
 }
 
-/* TABLET AND MOBILE VIEWS - 0768px to 1023px */
+/* TABLET AND MOBILE VIEWS - 768px to 1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
   .content {
     padding: 0 20px;
