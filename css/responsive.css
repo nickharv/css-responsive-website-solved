@@ -28,7 +28,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px 80px;
+    padding: 0 30px;
     gap: 30px;
   }
 
@@ -45,6 +45,7 @@
     color: #969696;
     font-size: 30px;
     cursor: pointer;
+    padding: 0px 10px 30px 10px;
   }
 
   .teammates-list::before {
