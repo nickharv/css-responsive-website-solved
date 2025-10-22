@@ -33,37 +33,30 @@
   }
 
   .teammates-list-wrapper {
-  display: flex;
-  width: 1024px;
-  overflow: hidden;
-  gap: 30px;
-}
-
-.teammates-list::before,
-.teammates-list::after {
-  display: flex;
-  color: #969696;
-  font-size: 30px;
-  cursor: pointer;
-  
-}
-
-.teammates-list::before {
-  justify-content: flex-start;
-  content: "\003C";
-}
-
-.teammates-list::after {
-  justify-content: flex-end;
-  content: "\003E";
-}
-
-  .teammates-list-wrapper {
     display: flex;
-    width: 100%;
+    width: 1024px;
     overflow: hidden;
     gap: 30px;
   }
+
+  .teammates-list::before,
+  .teammates-list::after {
+    display: flex;
+    color: #969696;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .teammates-list::before {
+    justify-content: flex-start;
+    content: "\003C";
+  }
+
+  .teammates-list::after {
+    justify-content: flex-end;
+    content: "\003E";
+  }
+
   .teammate-img-wrapper {
     width: 160px;
     overflow: hidden;
